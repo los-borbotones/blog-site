@@ -1,5 +1,261 @@
-html {
-    height: 100%;
-    width: 100%;
+* {
+  box-sizing: border-box;
+}
+
+:root{
+  --color-one: #2476BE;
+  --color-two: #3D9DD9;
+  --color-three: #60B6D9;
+  --color-four: #F3C53C;
+  --color-five: #DAB13B;
+  --color-six: #1f1f1f;
+  --color-seven: #C7CACA;
+  --color-eight: #E8E8F4;
+  --color-nine: #1461a5;
+
+  --font-style: "Gloria Hallelujah", serif;
+  --font-normal: "Lato", serif;
+
+  --shadow: 1px 4px black;
+  --shadow-reverse: 1px 4px #F3C53C;
+
+}
+
+
+body {
+  background-color: var(--color-two);
+  margin: 0;
+  font-family: var(--font-normal);
+  color: var(--color-eight);
+  width: 100%;
+}
+
+nav{
+  background-color: var(--color-one);
+  display: flex;
+  justify-content: center;
+  font-family: var(--font-style);
+  gap: 10vh;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+nav a{
+  color: var(--color-four);
+  font-size: 5vh;
+  text-decoration: none;
+  text-shadow: var(--shadow);
+}
+
+nav a:hover{
+  color: var(--color-eight);
+}
+
+main{
+  text-align: center;
+}
+
+main h2{
+  font-size: 4vh;
+}
+
+p {
+  font-family: var(--font-normal);
+  font-weight: bold;
+  text-align: justify;
+  font-size: 3vh;
+}
+
+#title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 15vh;
+  color: transparent;
+  font-family: var(--font-style);
+  text-shadow: var(--shadow);
+
+}
+
+#title h1, .highlight-text {
+  text-shadow: var(--shadow);
+  font-family: var(--font-style);
+  color: var(--color-four);
+  font-size: 10vh;
+  text-wrap: wrap;
+  text-align: center;
+}
+
+img{
+  width: 50vh;
+}
+
+#blog{
+  padding: 5vh 10vh;
+  background-color: var(--color-three);
+}
+
+#blog h3{
+  color: var(--color-six);
+  font-family: var(--font-style);
+  text-shadow: var(--shadow-reverse);
+  font-size: 6vh;
+}
+
+.article{
+  background-color: var(--color-one);
+  padding: 5vh;
+  width: 100%;
+  text-align: center;
+  margin: 5vh 0;
+}
+
+.article h4{
+  font-family: var(--font-style);
+  font-size: 4vh;
+  color: var(--color-four);
+  margin: 0;
+  text-shadow: var(--shadow);
+}
+
+.content{
+  display: flex;
+  justify-content: space-between;
+  gap: 10vh;
+}
+
+.about-section{
+  margin: 0 10vh;
+}
+
+.about-section h2, h1{
+  font-family: var(--font-style);
+  font-size: 5vh;
+  color: var(--color-four);
+  text-shadow: var(--shadow);
+}
+
+.contacto {
+  margin: 20vh 40vh;
+}
+
+.contacto h2{
+  font-family: var(--font-style);
+  color: var(--color-four);
+  text-shadow: var(--shadow);
+  font-size: 5vh;
+}
+
+form{
+  background-color: var(--color-one);
+  padding: 10vh;
+  display: flex;  
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  text-align: left;
+}
+
+form label{
+  font-size: 3vh;
+  font-family: var(--font-normal);
+  font-weight: bold;
+}
+
+form input, form textarea{
+  font-size: 3vh;
+  font-family: var(--font-normal);
+  font-weight: bold;
+  background-color: var(--color-three);
+  border-style: none;
+  padding: 2vh;
+  color: black;
+  height: 8vh;
+}
+
+form input{
+  height: 8vh;
+}
+form textarea{
+  height: 20vh;
+}
+
+form input::placeholder, form textarea::placeholder{
+  color: var(--color-six);
+  font-weight:normal;
+}
+
+form input:focus, form textarea:focus{
+  outline-color: var(--color-four);
+  outline-style: solid 1vh;
+}
+
+button{
+  font-family: var(--font-style);
+  font-size: 3vh;
+  background-color: var(--color-nine);
+  color: var(--color-four);
+  border-style: solid;
+  border-radius: 25px;
+  border-color: var(--color-six);
+  text-shadow: var(--shadow);
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: var(--color-two);
+}
+
+
+.map{
+  width: 100%;
+}
+
+footer{
+  background-color: var(--color-nine);
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 768px){
+  .content{
+    flex-direction: column;
   }
   
+  footer {
+    flex-direction: column;
+  }
+  
+  footer p{
+    text-align: center;
+  }
+
+  .contacto {
+    margin: 20vh 0;
+  }
+
+  form {
+    padding: 10vh 2vh;
+  }
+
+}
+
+@media (max-width: 445px){
+  img {
+    width: 100%;
+  }
+
+  nav a {
+    font-size: 3vh;
+  }
+
+  #blog {
+    padding: 5vh 0;
+  }
+
+
+}
