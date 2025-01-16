@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+:root{
+  --color-one: #2476BE;
+  --color-two: #3D9DD9;
+  --color-three: #60B6D9;
+  --color-four: #F3C53C;
+  --color-five: #DAB13B;
+  --color-six: #1f1f1f;
+  --color-seven: #C7CACA;
+  --color-eight: #E8E8F4;
+  --color-nine: #1461a5;
+
+  --font-style: "Gloria Hallelujah", serif;
+  --font-normal: "Lato", serif;
+
+  --shadow: 1px 4px black;
+  --shadow-reverse: 1px 4px #F3C53C;
+
+}
+
+.navbarbg{
+  background-color: var(--color-one);
+  
+}
+
+nav .nav-link{
+  font-family: var(--font-style);
+  color: var(--color-four);
+  text-decoration: none;
+  font-size: 5vh;
+  text-shadow: var(--shadow);
+}
+
+nav .nav-link:hover{
+  color: var(--color-eight);
+}
+
+.footerbg{
+  background-color: var(--color-nine);
+  color: var(--color-eight);
+  font-weight: bold;
+}
+
