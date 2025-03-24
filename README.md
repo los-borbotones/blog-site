@@ -1,2 +1,2 @@
-# ad-l4
-AD-07-1 The blog Site - Group
+# Blog Site Los Borbotones
+A simple static page featuring a blog site fully responsive page
